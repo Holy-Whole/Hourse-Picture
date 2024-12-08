@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    color: white;
+}
+.all{
+    display: flex;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    line-height: 0.5;
+}
+.content h1{
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+.content p{
+    font-size: 30px;
+   
+}
+#fil{
+    position: absolute;
+    top: 400px;
+}
+#fil::file-selector-button{
+    border: 1px solid white;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    display: block;
+    cursor: pointer;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+.all::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(Picture//NY-blog-thumbnail-Horse-Breeds.jfif);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    mask-image: url(Picture/ezgif-6-581b53cb26.gif);
+    mask-size: cover;
+    mask-position: center;
+}
